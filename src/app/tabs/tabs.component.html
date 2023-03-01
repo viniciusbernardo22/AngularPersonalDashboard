@@ -1,0 +1,14 @@
+<div class="tabs">
+  <ng-container *ngFor="let tab of tabList">
+    <a
+      [routerLink]="tab.RouteLink"
+      routerLinkActive="selected"
+      class="tab"
+      [ngClass]="tab.tabClass"
+    >
+      <div class="tab-tile">
+        <i class="material-icons-outlined">{{ tab.tabName }}</i>
+      </div>
+    </a>
+  </ng-container>
+</div>
